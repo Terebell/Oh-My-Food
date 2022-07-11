@@ -20,18 +20,20 @@
             <h1>ohmyfood</h1>
         </nav>
 
-        <form method="post" action="traitement.php">
+        <form method="post" action="traitement.php" class="search">
             <i class="fas fa-location-dot"></i>
-            <input type="search" name="lieu" placeholder="Paris, Belleville">
+            <input type="search" name="lieu" value="Paris, Belleville">
         </form>
-        <h3>Réservez le menu qui vous convient</h3>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button>Explorez nos restaurants</button>
+        <div class="intro">
+            <h2 class="roboto">Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <button type="submit">Explorez nos restaurants</button>
+        </div>
     </header>
 
     <main>
         <section>
-            <h3>Fonctionnement</h3>
+            <h2 class="roboto">Fonctionnement</h2>
             <a>
                 <h6>1</h6>
                 <i class="fa-solid fa-mobile-screen-button"></i>
@@ -49,7 +51,7 @@
             </a>
         </section>
         <section>
-            <h3>Restaurants</h3>
+            <h2 class="roboto">Restaurants</h2>
             <a href="la-palette-du-gout.html" class="vignette">
                 <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                     alt="La palette du goût, Ménilmontant">
