@@ -3,7 +3,7 @@ button {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 217px;
+    width: 100%;
     padding: 15px 0 15px 0;
     border: none;
     border-radius: 25px;
@@ -12,4 +12,5 @@ button {
     color: white;
     background: linear-gradient(to top left, $primary-color, $secondary-color);
     box-shadow: 0 5px 5px $color-shadow;
+    cursor: pointer;
 }

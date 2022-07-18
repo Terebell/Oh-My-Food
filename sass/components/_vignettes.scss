@@ -1,4 +1,4 @@
-.fonctionnement {
+#fonctionnement {
     background-color: white;
     padding: 28px 20px 43px 20px;
 
@@ -28,6 +28,14 @@
         color: black;
         font-size: 16px;
         font-weight: bold;
+    }
+
+    a:hover {
+        background: $primary-color-pale;
+
+        .fa-solid {
+            color: $primary-color;
+        }
     }
 
     .fa-solid,
