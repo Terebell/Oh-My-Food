@@ -1,6 +1,8 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
+$primary-color-pale: #F5EDFF;
+$tertiary-color-darker: #008766;
 $background-color-1: #F6F6F6;
 $background-color-2: #EAEAEA;
 $footer-color: #353535;
@@ -14,4 +16,8 @@ $color-shadow: rgba(53, 53, 53, 0.13);
 body {
     margin: 0px;
     background-color: $background-color-1;
+}
+
+a {
+    text-decoration: none;
 }

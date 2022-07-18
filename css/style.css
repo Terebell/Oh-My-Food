@@ -10,6 +10,10 @@ body {
   background-color: #F6F6F6;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-family: "Shrikhand";
   text-align: center;
@@ -22,7 +26,7 @@ h1 {
 h2.roboto {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
-  font-style: bold;
+  font-weight: bold;
 }
 
 p {
@@ -57,9 +61,38 @@ form input {
   margin-bottom: 0;
 }
 
+footer {
+  background-color: #353535;
+  padding-top: 22px;
+  padding-bottom: 9px;
+  color: white;
+}
+footer .logo {
+  width: 115px;
+  padding-left: 20px;
+  filter: invert(1);
+}
+footer a {
+  color: white;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style-type: none;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+footer .fa-solid {
+  padding-right: 10px;
+}
+
 button {
-  margin-left: 10%;
-  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 217px;
   padding: 15px 0 15px 0;
   border: none;
   border-radius: 25px;
@@ -68,4 +101,38 @@ button {
   color: white;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   box-shadow: 0 5px 5px rgba(53, 53, 53, 0.13);
+}
+
+.fonctionnement {
+  background-color: white;
+  padding: 28px 20px 43px 20px;
+}
+.fonctionnement .steps {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.fonctionnement .number {
+  background-color: #9356DC;
+  color: white;
+  padding: 4px 8px 2px 8px;
+  border-radius: 100%;
+  margin: -3%;
+}
+.fonctionnement a {
+  width: 97%;
+  height: 72px;
+  background: linear-gradient(#F6F6F6, white);
+  border-radius: 21px;
+  box-shadow: 0 5px 5px rgba(53, 53, 53, 0.13);
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+.fonctionnement .fa-solid,
+.fonctionnement p {
+  padding-left: 27px;
 }
