@@ -1,0 +1,20 @@
+@media screen and (min-width: 768px) {
+  h2.roboto {
+    margin-bottom: 30px;
+  }
+  #fonctionnement {
+    padding: 48px 30% 68px 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #fonctionnement .steps {
+    width: 100%;
+  }
+  #fonctionnement a {
+    width: 100%;
+  }
+  #restaurant {
+    padding: 40px 46px 40px 46px;
+  }
+}
