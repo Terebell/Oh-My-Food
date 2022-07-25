@@ -13,4 +13,9 @@ button {
     background: linear-gradient(to top left, $primary-color, $secondary-color);
     box-shadow: 0 5px 5px $color-shadow;
     cursor: pointer;
+    transition: transform 200ms;
+
+    &:hover {
+        transform: scale(1.15);
+    }
 }
