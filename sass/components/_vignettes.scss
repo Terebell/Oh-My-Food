@@ -86,21 +86,55 @@
             position: absolute;
             right: 20px;
             margin: 13px 11px;
-            
+
         }
 
         .icon-heart {
             display: flex;
             justify-content: flex-end;
             margin-top: -55px;
-            padding-right: 22px; 
+            padding-right: 22px;
             font-size: 21px;
-            color: black;       
 
             .fa-solid {
-                margin-right: -22px;
                 color: transparent;
             }
+
+            .fa-regular {
+                margin-right: -22px;
+                color: black;
+            }
+
+            :hover {
+                background: linear-gradient($primary-color, $secondary-color);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+    
+            .icon-heart--hover {
+                i {
+                    position: absolute;
+                    right: 0;
+                    opacity: 0;
+                    background: linear-gradient($primary-color, $secondary-color);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+    
+                // Remplissage du cœur au survol
+                &:hover i{
+                    animation: heart-animation 1.2s forwards;
+                }
+            }
+            //     &:hover {
+            //         // color: $secondary-color;
+            //         animation: heart-animation-fill 1s forwards;
+            //     }
+            // }
+
+            // &:hover i {
+            //     animation: heart-animation-empty 1s forwards;
+            // }
         }
     }
 }

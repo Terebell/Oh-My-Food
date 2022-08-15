@@ -141,6 +141,7 @@ button {
 }
 button:hover {
   transform: scale(1.15);
+  opacity: 85%;
 }
 
 #fonctionnement {
@@ -228,9 +229,89 @@ button:hover {
   margin-top: -55px;
   padding-right: 22px;
   font-size: 21px;
-  color: black;
 }
 #restaurant .vignette .icon-heart .fa-solid {
-  margin-right: -22px;
   color: transparent;
+}
+#restaurant .vignette .icon-heart .fa-regular {
+  margin-right: -22px;
+  color: black;
+}
+#restaurant .vignette .icon-heart :hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#restaurant .vignette .icon-heart .icon-heart--hover i {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#restaurant .vignette .icon-heart .icon-heart--hover:hover i {
+  animation: heart-animation 1.2s forwards;
+}
+
+/* ----- Animation chargement ----- */
+#load-spinner {
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: end-spinner 1.5s forwards;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 12px solid #fff;
+  border-color: #9356DC transparent #99E2D0 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes end-spinner {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* ----- Animation coeurs ----- */
+@keyframes heart-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
