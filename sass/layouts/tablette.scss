@@ -19,6 +19,29 @@
     }
 
     #restaurant {
-        padding: 40px 46px 40px 46px;
+        padding: 40px 35px 40px 35px;
+
+        .choix {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .vignette {
+            width: 45%;
+            margin-left: 11px;
+            margin-right: 11px;
+        }
+    }
+
+    footer {
+
+        .logo,
+        li {
+            padding-left: 46px;
+        }
+
+        .logo {
+            width: 150px;
+        }
     }
 }
