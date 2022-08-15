@@ -1,0 +1,25 @@
+@media screen and (min-width: 992px) {
+  #fonctionnement {
+    padding: 48px 5% 80px 5%;
+  }
+  #fonctionnement .steps {
+    display: flex;
+    flex-direction: row;
+  }
+  #fonctionnement .steps .step {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  #restaurant {
+    padding: 40px 5% 55px 5%;
+  }
+  #restaurant .vignette {
+    width: 20%;
+  }
+  footer .logo, footer li {
+    padding-left: 6%;
+  }
+  footer .logo {
+    width: 210px;
+  }
+}
