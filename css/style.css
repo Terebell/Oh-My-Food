@@ -38,8 +38,9 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  h2.roboto {
+  section h2.roboto {
     margin-bottom: 30px;
+    text-align: center;
   }
   #fonctionnement {
     padding: 48px 30% 68px 30%;
@@ -71,6 +72,31 @@ footer li {
   }
   footer .logo {
     width: 150px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #fonctionnement {
+    padding: 48px 5% 80px 5%;
+  }
+  #fonctionnement .steps {
+    display: flex;
+    flex-direction: row;
+  }
+  #fonctionnement .steps .step {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  #restaurant {
+    padding: 40px 5% 55px 5%;
+  }
+  #restaurant .vignette {
+    width: 20%;
+  }
+  footer .logo, footer li {
+    padding-left: 6%;
+  }
+  footer .logo {
+    width: 210px;
   }
 }
 nav {
@@ -204,6 +230,7 @@ button:hover {
   padding: 53px 20px 46px 20px;
 }
 #restaurant a {
+  position: relative;
   color: black;
 }
 #restaurant .vignette {
@@ -237,7 +264,8 @@ button:hover {
   box-shadow: 0 5px 5px rgba(53, 53, 53, 0.13);
   position: absolute;
   right: 20px;
-  margin: 13px 11px;
+  top: 13px;
+  margin: 0;
 }
 #restaurant .vignette .icon-heart {
   display: flex;
@@ -246,28 +274,20 @@ button:hover {
   padding-right: 22px;
   font-size: 21px;
 }
+#restaurant .vignette .icon-heart .fa-regular {
+  margin-right: -22px;
+}
 #restaurant .vignette .icon-heart .fa-solid {
   color: transparent;
 }
-#restaurant .vignette .icon-heart .fa-regular {
-  margin-right: -22px;
-  color: black;
-}
-#restaurant .vignette .icon-heart :hover {
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#restaurant .vignette .icon-heart .icon-heart--hover i {
-  position: absolute;
-  right: 0;
+#restaurant .vignette .icon-heart:hover .fa-regular {
   opacity: 0;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
-#restaurant .vignette .icon-heart .icon-heart--hover:hover i {
-  animation: heart-animation 1.2s forwards;
+#restaurant .vignette .icon-heart:hover .fa-solid {
+  color: transparent;
+  background: linear-gradient(120deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /* ----- Animation chargement ----- */
@@ -323,11 +343,3 @@ button:hover {
   }
 }
 /* ----- Animation coeurs ----- */
-@keyframes heart-animation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}

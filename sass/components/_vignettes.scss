@@ -48,6 +48,7 @@
     padding: 53px 20px 46px 20px;
 
     a {
+        position: relative;
         color: black;
     }
 
@@ -85,7 +86,8 @@
             box-shadow: 0 5px 5px $color-shadow;
             position: absolute;
             right: 20px;
-            margin: 13px 11px;
+            top: 13px;
+            margin: 0;
 
         }
 
@@ -96,45 +98,25 @@
             padding-right: 22px;
             font-size: 21px;
 
+            .fa-regular {
+                margin-right: -22px;
+            }
+
             .fa-solid {
                 color: transparent;
             }
 
-            .fa-regular {
-                margin-right: -22px;
-                color: black;
-            }
-
-            :hover {
-                background: linear-gradient($primary-color, $secondary-color);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-    
-            .icon-heart--hover {
-                i {
-                    position: absolute;
-                    right: 0;
+            &:hover {
+                .fa-regular {
                     opacity: 0;
-                    background: linear-gradient($primary-color, $secondary-color);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
                 }
-    
-                // Remplissage du cœur au survol
-                &:hover i{
-                    animation: heart-animation 1.2s forwards;
+                .fa-solid {
+                    color: transparent;
+                    background: linear-gradient(120deg, $secondary-color, $primary-color);
+                    background-clip: text;
+                    -webkit-background-clip: text;
                 }
             }
-            //     &:hover {
-            //         // color: $secondary-color;
-            //         animation: heart-animation-fill 1s forwards;
-            //     }
-            // }
-
-            // &:hover i {
-            //     animation: heart-animation-empty 1s forwards;
-            // }
         }
     }
 }
