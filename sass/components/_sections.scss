@@ -110,6 +110,7 @@
                 .fa-regular {
                     opacity: 0;
                 }
+
                 .fa-solid {
                     color: transparent;
                     background: linear-gradient(120deg, $secondary-color, $primary-color);
@@ -119,4 +120,52 @@
             }
         }
     }
+}
+
+/* ----- PAGES RESTAURANTS ----- */
+.menu {
+    padding: 27px 20px 78px 20px;
+    background-color: $background-color-1;
+    border-radius: 40px 40px 0 0;
+
+
+    .titre {
+        .icon-heart {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: -50px;
+            padding-right: 22px;
+            font-size: 21px;
+            vertical-align: baseline;
+
+            .fa-regular {
+                margin-right: -22px;
+            }
+
+            .fa-solid {
+                color: transparent;
+            }
+
+            &:hover {
+                .fa-regular {
+                    opacity: 0;
+                }
+
+                .fa-solid {
+                    color: transparent;
+                    background: linear-gradient(120deg, $secondary-color, $primary-color);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                }
+            }
+        }
+    }
+
+    .titre-underline {
+        display: block;
+        border-bottom: 3px solid $tertiary-color;
+        width: 38px;
+        margin-bottom: 15px;
+    }
+
 }

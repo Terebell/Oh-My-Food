@@ -27,6 +27,18 @@ h2.roboto {
   font-weight: bold;
 }
 
+h2.shrikhand {
+  font-family: "Shrikhand";
+  font-size: 28px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
 h5 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -136,6 +148,24 @@ form input {
 .intro .bouton {
   width: 217px;
   margin: auto;
+}
+
+/* ----- HEADER AUTRES PAGE ----- */
+nav a {
+  color: black;
+  padding-left: 23px;
+}
+nav a h1 {
+  margin-top: -26px;
+}
+nav a .fa-solid {
+  font-size: 25px;
+  color: #353535;
+}
+
+.heading-background img {
+  width: 100%;
+  object-fit: cover;
 }
 
 footer {
@@ -290,6 +320,42 @@ button:hover {
   -webkit-background-clip: text;
 }
 
+/* ----- PAGES RESTAURANTS ----- */
+.menu {
+  padding: 27px 20px 78px 20px;
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0 0;
+}
+.menu .titre .icon-heart {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -50px;
+  padding-right: 22px;
+  font-size: 21px;
+  vertical-align: baseline;
+}
+.menu .titre .icon-heart .fa-regular {
+  margin-right: -22px;
+}
+.menu .titre .icon-heart .fa-solid {
+  color: transparent;
+}
+.menu .titre .icon-heart:hover .fa-regular {
+  opacity: 0;
+}
+.menu .titre .icon-heart:hover .fa-solid {
+  color: transparent;
+  background: linear-gradient(120deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.menu .titre-underline {
+  display: block;
+  border-bottom: 3px solid #99E2D0;
+  width: 38px;
+  margin-bottom: 15px;
+}
+
 /* ----- Animation chargement ----- */
 #load-spinner {
   position: fixed;
@@ -342,4 +408,3 @@ button:hover {
     visibility: hidden;
   }
 }
-/* ----- Animation coeurs ----- */
