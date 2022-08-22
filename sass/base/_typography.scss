@@ -23,6 +23,7 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-size: 16px; 
   text-transform: uppercase;
+  margin-top: 40px;
   margin-bottom: 5px;
 }
 
@@ -34,4 +35,8 @@ h5 {
 
 p {
     font-size: 17px;
+
+    strong {
+        font-weight: bold;
+    }
 }

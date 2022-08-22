@@ -34,7 +34,7 @@ form {
         margin-bottom: 0;
     }
 
-    .bouton {
+    button {
         width: 217px;
         margin: auto;
     }
@@ -43,21 +43,25 @@ form {
 /* ----- HEADER AUTRES PAGE ----- */
 nav a {
     color: black;
-    padding-left: 23px;
     
-    h1 {
-        margin-top: -26px;
-    }
+    // h1 {
+    //     margin-top: -26px;
+    // }
 
     .fa-solid {
         font-size: 25px;
-        color: $footer-color;
+        position: absolute;
+        top: 20px;
+        left: 23px;
+
     }
 }
 
 .heading-background {
     img {
         width: 100%;
-        object-fit: cover;
+        height: 250px;
+        object-fit:cover;
+        display: flex;
     }
 }

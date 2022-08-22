@@ -15,8 +15,15 @@ button {
     cursor: pointer;
     transition: transform 200ms;
 
+
     &:hover {
-        transform: scale(1.15);
-        opacity: 85%;
+        animation: btn-transition 0.5s forwards;
+    }
+}
+
+.menu {
+    button {
+        width: 190px;
+        margin-top: 33px;
     }
 }

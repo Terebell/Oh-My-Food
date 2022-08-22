@@ -36,6 +36,9 @@
         .fa-solid {
             color: $primary-color;
         }
+
+        animation: bg-steps 0.5s forwards;
+
     }
 
     .fa-solid,
@@ -108,7 +111,7 @@
 
             &:hover {
                 .fa-regular {
-                    opacity: 0;
+                    color: transparent;
                 }
 
                 .fa-solid {
@@ -116,6 +119,10 @@
                     background: linear-gradient(120deg, $secondary-color, $primary-color);
                     background-clip: text;
                     -webkit-background-clip: text;
+                }
+
+                i {
+                    animation: animation-heart 2s forwards;
                 }
             }
         }
@@ -127,7 +134,10 @@
     padding: 27px 20px 78px 20px;
     background-color: $background-color-1;
     border-radius: 40px 40px 0 0;
-
+    margin-top: -50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
     .titre {
         .icon-heart {
@@ -148,7 +158,7 @@
 
             &:hover {
                 .fa-regular {
-                    opacity: 0;
+                    color: transparent;
                 }
 
                 .fa-solid {
@@ -156,6 +166,10 @@
                     background: linear-gradient(120deg, $secondary-color, $primary-color);
                     background-clip: text;
                     -webkit-background-clip: text;
+                }
+
+                i {
+                    animation: animation-heart 2s forwards;
                 }
             }
         }
@@ -168,4 +182,82 @@
         margin-bottom: 15px;
     }
 
+    .card {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 21px;
+        box-shadow: 0 5px 5px $color-shadow;
+        color: black;
+        width: 100%;
+        height: 70px;
+        margin-bottom: 15px;
+        overflow: hidden;
+
+        .card-contenu {
+            display: flex;
+            flex-direction: column;
+            padding: 15px 15px 15px 13px;
+            width: 100%;
+        }
+
+        h5 {
+            font-size: 17px;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                font-size: 15px;
+                margin: 0;
+            }
+
+            .no-overflow {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .prix {
+                align-items: flex-end;
+            }
+        }
+
+        .animation-check {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 0%; // Au survol = 20%
+            max-width: 70px;
+            background-color: $tertiary-color;
+            border-radius: 0 21px 21px 0;
+            overflow: hidden;
+            transition: all 0.5s;
+
+            i {
+                font-size: 25px;
+                color: white;
+            }
+        }
+
+        &:hover {
+            .card-contenu {
+                transition: all 0.7s;
+                width: 80%;
+            }
+
+            .animation-check {
+                transition: all 1s;
+                width: 20%;
+
+                i {
+                    animation: checkRotate 0.5s 0.1s;
+                }
+            }
+        }
+    }
 }
