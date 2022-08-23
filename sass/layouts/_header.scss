@@ -2,6 +2,12 @@ nav {
     background-color: white;
     padding: 15px 0 15px 0;
     box-shadow: 0 5px 5px $color-shadow;
+
+    .logoTitre {
+        width: 165px;
+        display: flex;
+        margin: auto;
+    }
 }
 
 form {
@@ -51,7 +57,7 @@ nav a {
     .fa-solid {
         font-size: 25px;
         position: absolute;
-        top: 20px;
+        top: 16px;
         left: 23px;
 
     }
