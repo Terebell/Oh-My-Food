@@ -1,6 +1,6 @@
 @media screen and (min-width: 992px) {
     #fonctionnement {
-        padding: 48px 5% 80px 5%;
+        padding: 48px 4% 80px 4%;
 
         .steps {
             display: flex;
@@ -22,7 +22,9 @@
     }
 
     footer {
-        .logo, li {
+
+        .logo,
+        li {
             padding-left: 6%;
         }
 
@@ -30,4 +32,28 @@
             width: 210px;
         }
     }
+
+    /* ----- PAGEs RESTAURANTS ----- */
+    .menu {
+        padding-left: 4%;
+        padding-right: 4%;
+
+        .titre {
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+        .animation-menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .carte {
+                width: 100%;
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+        }
+    }
+
 }
