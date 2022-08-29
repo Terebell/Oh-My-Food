@@ -166,6 +166,9 @@ form input {
   font-size: 16px;
   font-weight: 700;
 }
+form input:focus {
+  outline: 0;
+}
 
 .intro {
   margin: 20px 30px 56px 30px;
